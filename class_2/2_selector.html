@@ -15,6 +15,14 @@
 			}
 
 			.container{width:800px; margin:0 auto;text-align:center}
+
+			.section.box ul li{display: inline-block;}
+			.section.box ul li:first-child{color:red;} /*li중 첫 번째*/
+
+			.section.box ul li:nth-child(2){color:blue;} /*li중 두 번째*/
+
+			.section.box ul *{border:1px solid #333;} /*모든 선택자*/
+
 		</style>
 
   </head>
@@ -26,13 +34,14 @@
 				<div class="section box">
 					<ul>
 						<li class="box">
-							<a href="#">box1</a>
+						box1
+						<span>확인</span>
 						</li>
 						<li class="box">
-							<a href="#">box2</a>
+						box2
 						</li>
 						<li class="box">
-							<a href="#">box3</a>
+						box3
 						</li>
 					</ul>
 				</div>
