@@ -74,7 +74,7 @@
 				height: 100px;
 				background: #1ba160;
 				display: inline-block;
-				vertical-align: middle;
+				/* vertical-align: middle; */
 				transition: all 1s;
 			}
 
@@ -92,6 +92,26 @@
 				padding-top: 50px;
 				height: 200px;
 			}
+
+			.box1 {
+				width:100px;
+				height:100px;
+				background: red;
+				display:inline-block;
+				cursor: pointer;
+				margin-left:50px;
+				transition: transform 0.5s;
+			}
+
+			.box1:hover{
+				transform: rotate(45deg) scale(2.2);
+				
+			}
+
+			.section2 {
+				text-align: center;
+			}
+			
 
 	
 		</style>
@@ -111,6 +131,13 @@
 					<div class="box"></div>
 					<div class="box"></div>
 					<div class="box"></div>
+				</div>
+
+
+				<div class="section2">
+					<div class="box1"></div>
+					<div class="box1"></div>
+					<div class="box1"></div>
 				</div>
 				
 		</div>
