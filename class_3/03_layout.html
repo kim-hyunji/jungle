@@ -29,10 +29,17 @@
 
 			.header .nav{
 				float: right;
+				margin-top: 10px;
 			}
 
 			.header .nav > a {
 				margin-left: 20px;
+			}
+
+			header:after{
+				content: "";
+				display: block;
+				clear: both;
 			}
 
 			.container {
@@ -113,32 +120,108 @@
 				background: #b70000;
 			}
 
-			.tb1 {
+			.section.table .table .row{
 				display: flex;
-				height: 800px;
-				margin-top: 20px;
 			}
 
-			.tb111 {
+			.section.table .table .row .label{
+				width:200px;
+				background: #aaa;
+				padding: 10px;
+			}
+
+			.section.table .table .row .input{
 				flex: 1;
-				height: 40px;
-				background: #999999;
-				border: #9999;
-				line-height: 40px;
-				padding-left: 20px;}
+				background: #eee;
+				padding:10px;
 
-			.tb222 {
-				width: 80%;
-				height: 40px;
-				border: 2px solid #9999;
+			}
+
+			.section.table .table .row .input input{
+				width: 100%;
 				box-sizing: border-box;
-				line-height: 30px;
 			}
 
-			.tb222 input{
-				width: 90%;
-				margin-left:5%;
+			@media all and (max-width:768px){
+				.visual{ height: 300px;
+				}
+
+				.visual .unit .txt_tit{
+					font-size: 30px;
+				}
+
+				.visual .unit .txt_subs_1{
+					font-size: 20px;
+				}
+
+				.section.box span{
+					display: block;
+					width: auto;
+					margin:20px 0;
+				}
+
+				.section.box span:hover{
+					transform: scale(1);
+				}
+
+				.sention.table{
+					border: 0;
+				}
+
+				.sention.table .table .row{
+					display: block;
+				}
+
+				.section.table .table .row:first-child{
+					border: 0;
+				}
+
+				.section.table .table .row .label{
+					width: auto;
+					background: none;
+					font-weight: bold;
+					font-size: 20px;
+				}
+
+				.section.table .table .row .input{
+					background: none;
+				}
+
+				.section.table .table .row .input input{
+					height:40px
+				}
+
+				.header .nav{
+					height: 70px;
+					width: 70px;
+					background:  #d7ba7d;
+					position: absolute;
+					right: 0;
+					top: 0;
+					margin-top: 0;
+				} 
+
+				.header .nav:hover{
+					height: 100vh;
+					width:200px;
+					z-index: 2;
+				}
+
+				.header .nav > a{
+					display: none;
+				}
+
+				.header .nav:hover > a{
+					display: block;
+					font-size: 20px;
+					line-height:  40px;
+				}
+
+				.header .nav:hover > a:hover{
+					text-decoration: underline;
+				}
 			}
+
 
 
 		</style>
@@ -177,12 +260,30 @@
 				<span></span>
 			</div>
 
-			<!-- section-->
+			<!-- section box_area-->
 
-			<div class="section tb1">
-				<div class="tb111">입력1</div>
-				<div class="tb222">
-					<input type="text">
+			<div class="section table">
+				<div class="table">
+					<div class="row">
+						<div class="label">
+							이름
+						</div>
+							<div class="input">
+								<input />
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="label">
+								전화번호
+							</div>
+							<div class="input">
+								<input />
+							</div>
+						</div>
+
+					</div>
+				
 				</div>
 
 			</div>
