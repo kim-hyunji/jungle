@@ -24,7 +24,6 @@
     transition: all .3s;
 }
 
-
 /* 말풍선 활성화시 디자인 */
 .chat_area .item.on{
     opacity: 1;
@@ -103,7 +102,8 @@
     margin-top:5px;
 }
 .input_area input[type="text"]:placeholder{
-    color: #999;}
+    color: #999;
+}
 
 /* 모바일구간(768px) 미디어쿼리 */
 @media all and (max-width:768px){
@@ -116,27 +116,15 @@
         font-size: 15px;
         height: 100%;
     }
-
     .chat_area{
-        height: calc(100% - 135px);}
-
-    .chat_area .item .box .msg{ 
-        font-size:17px;
-
+        height: calc(100% - 135px);
     }
-    
+    .chat_area .item .box .msg{
+        font-size: 17px;
+    }
     .input_area input[type="text"]{
-        height: 50px;
+        height:50px;
     }
+
+
 }
-
-
-
-
-
-
-
-
-    /* 
-.chat_area .item.mymsg.on{
-    transform: translateX(0)} */
